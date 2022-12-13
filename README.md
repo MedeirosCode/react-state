@@ -26,7 +26,7 @@ Durante o desenvolvimento, foi ensinado sobre o uso do `State` e `Constructor`.
     $ git clone https://github.com/MedeirosCode/react-state.git
 
     // Acessar diretório
-    $ cd class-and-components
+    $ cd react-state
 
     // Instalar dependências
     $ npm install
