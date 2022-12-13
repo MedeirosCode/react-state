@@ -16,7 +16,7 @@ class App extends Component {
   increase() {
     let state = this.state;
     if (state.contador === 1) {
-      alert("o numero maximo é 1!");
+      alert("the maximum number is 1!");
       return;
     }
     state.contador += 1;
@@ -27,7 +27,7 @@ class App extends Component {
   decrease() {
     let state = this.state;
     if (state.contador === 0) {
-      alert("Opa chegou a zero!");
+      alert("Oops reached zero!");
       return;
     }
     state.contador -= 1;
