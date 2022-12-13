@@ -8,11 +8,11 @@
 
 # 🔖 Sobre
 
-Esse repositório foi desenvolvido com o objetivo de mostrar o que aprendi na aula online sobre react usando states.
+Esse repositório foi desenvolvido com o objetivo de mostrar o que aprendi na aula online sobre react usando state.
 
 ## ✍🏻 Conceitos ensinados
 
-Durante o desenvolvimento, foi ensinado sobre o uso do `States` e `Constructor`.
+Durante o desenvolvimento, foi ensinado sobre o uso do `State` e `Constructor`.
 
 ## 🗂 Material de apoio
 
@@ -37,7 +37,7 @@ Durante o desenvolvimento, foi ensinado sobre o uso do `States` e `Constructor`.
 
 ## ☑️ Aprendizado
 
-[✅] Utilizar States <br/>
+[✅] Utilizar State <br/>
 [✅] Utilizar Constructor<br/>
 
 ---
