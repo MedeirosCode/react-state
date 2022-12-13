@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
-}
+import React, { Component } from "react";
+import "./index.css";
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      nome: "Christian Medeiros",
+      contador: 0,
+    };
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    this.decrease = this.decrease.bind(this);
+    this.increase = this.increase.bind(this);
+  }
+
+  increase() {
+    let state = this.state;
+    if (state.contador === 1) {
+      alert("o numero maximo é 1!");
+      return;
+    }
+    state.contador += 1;
+    state.nome = "Christian";
+    this.setState(state);
+  }
+
+  decrease() {
+    let state = this.state;
+    if (state.contador === 0) {
+      alert("Opa chegou a zero!");
+      return;
+    }
+    state.contador -= 1;
+    state.nome = "Medeiros";
+
+    this.setState(state);
+  }
+  render() {
+    return (
+      <div>
+        <h2>Counter</h2>
+        {this.state.nome}
+        <h2>
+          <button onClick={this.increase}> + </button>
+          <h2>{this.state.contador}</h2>
+          <button onClick={this.decrease}> - </button>
+        </h2>
+      </div>
+    );
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+export default App;
