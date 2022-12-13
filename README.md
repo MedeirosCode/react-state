@@ -41,6 +41,6 @@ Durante o desenvolvimento, foi ensinado sobre o uso do `States` e `Constructor`.
 [✅] Utilizar Constructor<br/>
 
 ---
-![image](https://user-images.githubusercontent.com/90536013/206940236-fec8f8c3-91f4-4619-9f7e-82bf4b4f0b10.png)
+![image](https://user-images.githubusercontent.com/90536013/207212598-bc2bae3b-899e-452a-88c7-eaf0d4467ce0.png)
 
 <h3 align="center"> Desenvolvido em um curso online. </h3>
