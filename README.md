@@ -23,7 +23,7 @@ Durante o desenvolvimento, foi ensinado sobre o uso do `States` e `Constructor`.
 ```bash
 
     // Clonar repositório
-    $ git clone https://github.com/MedeirosCode/react-states.git
+    $ git clone https://github.com/MedeirosCode/react-state.git
 
     // Acessar diretório
     $ cd class-and-components
