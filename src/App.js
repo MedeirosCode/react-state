@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./index.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      nome: "Christian Medeiros",
+      contador: 0,
+    };
+
+    this.decrease = this.decrease.bind(this);
+    this.increase = this.increase.bind(this);
+  }
+
+  increase() {
+    let state = this.state;
+    if (state.contador === 1) {
+      alert("o numero maximo é 1!");
+      return;
+    }
+    state.contador += 1;
+    state.nome = "Christian";
+    this.setState(state);
+  }
+
+  decrease() {
+    let state = this.state;
+    if (state.contador === 0) {
+      alert("Opa chegou a zero!");
+      return;
+    }
+    state.contador -= 1;
+    state.nome = "Medeiros";
+
+    this.setState(state);
+  }
+  render() {
+    return (
+      <div>
+        <h2>Counter</h2>
+        {this.state.nome}
+        <h2>
+          <button onClick={this.increase}> + </button>
+          <h2>{this.state.contador}</h2>
+          <button onClick={this.decrease}> - </button>
+        </h2>
+      </div>
+    );
+  }
 }
 
 export default App;
